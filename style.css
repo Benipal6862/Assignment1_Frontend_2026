@@ -1,14 +1,4 @@
-/* ============================================================
-   style.css — Cafe Montreal
-   
-   This stylesheet shows:
-   - #id selectors for unique elements (nav, hero, sections, footer)
-   - .class selectors for reusable styles (cards, buttons, tags)
-   ============================================================ */
-
-
 /* --- RESET --- */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,61 +6,52 @@
 }
 
 html {
-  /* Makes anchor link scrolling smooth instead of instant */
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Georgia, serif;
-  color: #2B1F0E;
-  background: #FDF6EC;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #1E3A5F;
+  background: #F4F7FB;
   line-height: 1.6;
 }
 
-
-/* --- NAVIGATION (id="site-nav") ---
-   Only ONE nav bar on the page, so we use #id to style it. */
-
+/* --- NAVIGATION --- */
 #site-nav {
-  background: #2B1F0E;
+  background: #1E3A5F;
   padding: 16px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* .nav-logo — the cafe name in the navbar */
 .nav-logo {
   font-size: 22px;
-  color: #E8A94E;
+  color: #FF6B6B;
   text-decoration: none;
 }
 
-/* .nav-links — the list of menu items */
 .nav-links {
   display: flex;
   list-style: none;
   gap: 8px;
 }
 
-/* .nav-link — reused on EVERY menu link */
 .nav-link {
-  color: #FDF6EC;
+  color: #F4F7FB;
   text-decoration: none;
   padding: 8px 16px;
   font-size: 14px;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
 }
 
-
-/* --- HERO (id="hero") ---
-   Only ONE hero section, so we use #id. */
-
+/* --- HERO --- */
 #hero {
-  background: #6B4226;
+  background: #1E3A5F;
   color: white;
   text-align: center;
   padding: 100px 40px;
@@ -81,22 +62,16 @@ body {
   margin-bottom: 12px;
 }
 
-/* .subtitle — could be reused on other pages */
 .subtitle {
   font-size: 18px;
   opacity: 0.9;
   margin-bottom: 28px;
 }
 
-
-/* --- BUTTONS (class="btn") ---
-   .btn is the BASE style. Modifier classes change the color.
-   Reused across the entire page. */
-
+/* --- BUTTONS --- */
 .btn {
   display: inline-block;
   padding: 12px 28px;
-  border: none;
   border-radius: 5px;
   font-size: 15px;
   font-weight: bold;
@@ -104,104 +79,88 @@ body {
   cursor: pointer;
 }
 
-/* .btn-gold — gold background modifier */
 .btn-gold {
-  background: #E8A94E;
-  color: #2B1F0E;
+  background: #FF6B6B;
+  color: white;
 }
 
 .btn:hover {
   opacity: 0.85;
 }
 
-
-/* --- SHARED SECTION STYLES (class="section") ---
-   Reused by EVERY content section for consistent spacing. */
-
+/* --- SECTION --- */
 .section {
   padding: 60px 40px;
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* .section-title — reused on every section heading */
 .section-title {
   font-size: 32px;
-  color: #6B4226;
+  color: #1E3A5F;
   margin-bottom: 20px;
 }
 
-/* .section-dark — modifier that adds a dark background */
 .section-dark {
-  background: #2B1F0E;
-  color: #FDF6EC;
+  background: #1E3A5F;
+  color: #F4F7FB;
   max-width: 100%;
 }
 
-/* Override the title color when inside a dark section */
 .section-dark .section-title {
-  color: #E8A94E;
+  color: #FF6B6B;
 }
 
-
-/* --- MENU CARDS (class="card") ---
-   Every menu item reuses the same card classes. */
-
+/* --- CARDS --- */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-/* .card — reused for every menu item */
 .card {
   background: white;
   border-radius: 8px;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 .card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
-/* .card-img — shared image style */
 .card-img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   display: block;
+  border-radius: 8px 8px 0 0;
 }
 
-/* .card-body — padding inside each card */
 .card-body {
   padding: 16px;
 }
 
-/* .card-title — heading in each card */
 .card-title {
   font-size: 18px;
   margin-bottom: 6px;
 }
 
-/* .card-text — description text */
 .card-text {
   font-size: 14px;
-  color: #8C7A66;
+  color: #555;
   margin-bottom: 10px;
 }
 
-/* .price — reused for every price */
 .price {
   font-weight: bold;
   font-size: 16px;
-  color: #6B4226;
+  color: #1E3A5F;
   margin-right: 8px;
 }
 
-
-/* --- TAGS (class="tag") ---
-   Base tag style + modifier classes for color variations. */
-
+/* --- TAGS --- */
 .tag {
   display: inline-block;
   padding: 2px 10px;
@@ -211,44 +170,33 @@ body {
   text-transform: uppercase;
 }
 
-/* .tag-popular — gold */
 .tag-popular {
-  background: #E8A94E;
-  color: #2B1F0E;
-}
-
-/* .tag-new — green */
-.tag-new {
-  background: #7A9370;
+  background: #FF6B6B;
   color: white;
 }
 
-/* .tag-classic — light green */
-.tag-classic {
-  background: #D5E3D0;
-  color: #2B1F0E;
+.tag-new {
+  background: #4CAF50;
+  color: white;
 }
 
+.tag-classic {
+  background: #D5E3D0;
+  color: #1E3A5F;
+}
 
-/* --- ABOUT SECTION ---
-   Uses shared .section class. Feature list below. */
-
-/* .feature-list — list of cafe features */
+/* --- ABOUT --- */
 .feature-list {
   margin-top: 20px;
   padding-left: 20px;
 }
 
-/* .feature-item — each individual feature */
 .feature-item {
   margin-bottom: 8px;
   font-size: 15px;
 }
 
-
-/* --- REVIEWS (class="review-card") ---
-   Each review reuses the same card style. */
-
+/* --- REVIEWS --- */
 .review-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -257,46 +205,83 @@ body {
   margin: 0 auto;
 }
 
-/* .review-card — reused for every review */
 .review-card {
   background: rgba(255, 255, 255, 0.1);
   padding: 24px;
   border-radius: 8px;
-  border-left: 4px solid #E8A94E;
+  border-left: 4px solid #FF6B6B;
 }
 
-/* .review-text */
 .review-text {
   font-size: 15px;
   font-style: italic;
   margin-bottom: 12px;
-  line-height: 1.7;
 }
 
-/* .review-author */
 .review-author {
   font-size: 13px;
   font-weight: bold;
-  color: #E8A94E;
+  color: #FF6B6B;
 }
 
-
-/* --- FOOTER (id="site-footer") ---
-   Only ONE footer, so we use #id. */
-
-#site-footer {
-  background: #2B1F0E;
-  color: #FDF6EC;
+/* --- TEAM --- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   text-align: center;
-  padding: 24px 40px;
+}
+
+.team-member {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #FF6B6B;
+  margin: 0 auto 16px;
+}
+
+.team-name {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.team-role {
   font-size: 14px;
+  color: #555;
+}
+
+/* --- GALLERY --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* --- FOOTER --- */
+#site-footer {
+  background: #1E3A5F;
+  color: #F4F7FB;
+  text-align: center;
+  padding: 24px;
 }
 
 #site-footer a {
-  color: #E8A94E;
+  color: #FF6B6B;
   text-decoration: none;
-}
-
-#site-footer a:hover {
-  text-decoration: underline;
 }
