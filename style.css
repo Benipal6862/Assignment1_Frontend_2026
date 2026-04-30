@@ -10,9 +10,15 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   font-family: "Trebuchet MS", sans-serif;
   color: #1E3A5F;
   background: #F4F7FB;
+=======
+  font-family: "Courier New", monospace;
+  color: #2B1F0E;
+  background: #FDF6EC;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   line-height: 1.6;
 }
 
@@ -27,7 +33,11 @@ body {
 
 .nav-logo {
   font-size: 22px;
+<<<<<<< HEAD
   color: #FF6B6B;
+=======
+  color: #3B82F6;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   text-decoration: none;
 }
 
@@ -45,6 +55,7 @@ body {
 }
 
 .nav-link:hover {
+<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
 }
@@ -52,6 +63,17 @@ body {
 /* --- HERO --- */
 #hero {
   background: #1E3A5F;
+=======
+ background: rgba(255, 255, 255, 0.15);
+border-radius: 4px;
+}
+
+/* --- HERO (id="hero") ---
+   Only ONE hero section, so we use #id. */
+
+#hero {
+  background: #0F172A;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   color: white;
   text-align: center;
   padding: 100px 40px;
@@ -80,8 +102,13 @@ body {
 }
 
 .btn-gold {
+<<<<<<< HEAD
   background: #FF6B6B;
   color: white;
+=======
+  background: #3B82F6;
+  color: #2B1F0E;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
 }
 
 .btn:hover {
@@ -97,7 +124,11 @@ body {
 
 .section-title {
   font-size: 32px;
+<<<<<<< HEAD
   color: #1E3A5F;
+=======
+  color: #0F172A;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   margin-bottom: 20px;
 }
 
@@ -108,7 +139,11 @@ body {
 }
 
 .section-dark .section-title {
+<<<<<<< HEAD
   color: #FF6B6B;
+=======
+  color: #3B82F6;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
 }
 
 /* --- CARDS --- */
@@ -126,7 +161,11 @@ body {
 }
 
 .card:hover {
+<<<<<<< HEAD
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+=======
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   transform: translateY(-4px);
 }
 
@@ -156,7 +195,11 @@ body {
 .price {
   font-weight: bold;
   font-size: 16px;
+<<<<<<< HEAD
   color: #1E3A5F;
+=======
+  color: #0F172A;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   margin-right: 8px;
 }
 
@@ -171,7 +214,17 @@ body {
 }
 
 .tag-popular {
+<<<<<<< HEAD
   background: #FF6B6B;
+=======
+  background: #3B82F6;
+  color: #2B1F0E;
+}
+
+/* .tag-new — green */
+.tag-new {
+  background: #7A9370;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   color: white;
 }
 
@@ -209,7 +262,11 @@ body {
   background: rgba(255, 255, 255, 0.1);
   padding: 24px;
   border-radius: 8px;
+<<<<<<< HEAD
   border-left: 4px solid #FF6B6B;
+=======
+  border-left: 4px solid #3B82F6;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
 }
 
 .review-text {
@@ -221,6 +278,7 @@ body {
 .review-author {
   font-size: 13px;
   font-weight: bold;
+<<<<<<< HEAD
   color: #FF6B6B;
 }
 
@@ -229,6 +287,50 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+=======
+  color: #3B82F6;
+}
+/* --- TEAM (class="team-member") ---
+   Each team member reuses the same classes. */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.team-member {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #0F172A;
+  margin: 0 auto 16px;
+}
+
+.team-name {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-size: 14px;
+  color: #8C7A66;
+}
+
+/* --- FOOTER (id="site-footer") ---
+   Only ONE footer, so we use #id. */
+
+#site-footer {
+  background: #2B1F0E;
+  color: #FDF6EC;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   text-align: center;
 }
 
@@ -282,6 +384,10 @@ body {
 }
 
 #site-footer a {
+<<<<<<< HEAD
   color: #FF6B6B;
+=======
+  color: #3B82F6;
+>>>>>>> f2820d6412e7c12dfe823f5da2f7b58167bf3be0
   text-decoration: none;
 }
